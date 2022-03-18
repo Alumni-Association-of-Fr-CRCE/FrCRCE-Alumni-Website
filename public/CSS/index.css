@@ -1,7 +1,3 @@
-.main {
-  position: fixed;
-}
-
 .head-nav {
   display: block;
   background-color: var(--yellow-color);
@@ -37,4 +33,8 @@
 
 .head-nav button:hover {
   font-size: 1.15em;
+}
+
+.main {
+  position: absolute;
 }

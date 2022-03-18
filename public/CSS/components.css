@@ -16,15 +16,12 @@ body {
 
 /* Navbar */
 
-nav {
-  background-color: var(--brown-color);
-  position: relative;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-nav a {
+.topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -34,18 +31,12 @@ nav a {
   font-size: 17px;
 }
 
-nav:first-child {
-  padding: 5px;
+.topnav a:nth-child(5) {
+  margin: 2em 1em;
 }
 
-nav a img {
-  width: 95px;
-  padding: 9px 20px;
-}
-
-.active {
-  background-color: #04aa6d;
-  color: white;
+.topnav a img {
+  width: 90px;
 }
 
 .topnav .icon {
@@ -55,6 +46,7 @@ nav a img {
 .dropdown {
   float: left;
   overflow: hidden;
+  margin: 2em 1em;
 }
 
 .dropdown .dropbtn {
@@ -74,7 +66,7 @@ nav a img {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 1;
 }
 
 .dropdown-content a {
@@ -101,7 +93,7 @@ nav a img {
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
@@ -110,19 +102,54 @@ nav a img {
     float: right;
     display: block;
   }
+  .topnav a:nth-child(5) {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+    margin: 0px;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 /* Footer */
 footer {
-  display: table;
+  bottom: 0px;
+  display: flex;
   width: 100vw;
   padding: 20px;
   background-color: var(--brown-color);
+  flex-direction: row;
 }
 
-.contact {
+.contact,
+.links,
+.social {
   float: left;
-  width: 30%;
+  width: 33%;
 }
 
 .contact img {
@@ -130,9 +157,14 @@ footer {
 }
 
 .links {
-  float: left;
   display: flex;
   flex-direction: column;
+}
+
+.links a,
+.social a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Media Queries */
