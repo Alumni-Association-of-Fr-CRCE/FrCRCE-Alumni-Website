@@ -1,14 +1,30 @@
+:root {
+  --brown-color: #4f4049;
+  --yellow-color: #f5d491;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: Arial;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+/* Navbar */
+
+nav {
+  background-color: var(--brown-color);
+  position: relative;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
 }
 
-.topnav a {
+nav a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -16,6 +32,15 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+nav:first-child {
+  padding: 5px;
+}
+
+nav a img {
+  width: 95px;
+  padding: 9px 20px;
 }
 
 .active {
@@ -49,7 +74,7 @@ body {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 2;
 }
 
 .dropdown-content a {
@@ -87,6 +112,30 @@ body {
   }
 }
 
+/* Footer */
+footer {
+  display: table;
+  width: 100vw;
+  padding: 20px;
+  background-color: var(--brown-color);
+}
+
+.contact {
+  float: left;
+  width: 30%;
+}
+
+.contact img {
+  width: 130px;
+}
+
+.links {
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media Queries */
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
