@@ -1,0 +1,24 @@
+body {
+  align-content: center;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  display: block;
+  padding: 1em;
+}
+
+.contributer {
+  display: block;
+  background-color: rgb(159, 72, 240);
+  border-radius: 10px;
+  color: white;
+  padding: 1em;
+  margin: 0.5em auto;
+  width: 90%;
+}
+
+.contributer h3 {
+  padding: 0.25em;
+}

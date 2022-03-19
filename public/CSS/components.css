@@ -167,6 +167,10 @@ footer {
   color: white;
 }
 
+.social a img {
+  width: 30px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 600px) {
   .topnav.responsive {
