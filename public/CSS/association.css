@@ -1,0 +1,79 @@
+.content-intro {
+  display: block;
+  background-image: url(/Assets/Images/alumni.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85vh;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.content-intro article {
+  margin-top: calc(70vh - 70px);
+  bottom: 0px;
+  width: 85%;
+  font-size: 1.25em;
+  padding: 5% 5% 0 5%;
+  color: white;
+}
+
+.content-intro::-webkit-scrollbar {
+  display: none;
+}
+.content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.content-intro article::first-letter {
+  font-size: 1.75em;
+}
+
+.vision,
+.mission,
+.objectives {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.objectives ul {
+  text-align: left;
+}
+
+.vision h2,
+.mission h2,
+.objectives h2 {
+  padding: 1em;
+}
+
+li::marker {
+  display: none;
+}
+
+li::before {
+  transform: translateX(-15px) translateY(5px);
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.placeholder {
+  margin-top: -30px;
+  background-color: var(--yellow-color);
+}
+
+.placeholder ul {
+  margin-left: 5em;
+  padding: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .placeholder ul {
+    margin-left: 2em;
+  }
+}

@@ -1,13 +1,13 @@
 body {
-  background-image: url(/Assets/Images/international.png);
+  background: url(/Assets/Images/international.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.74);
 }
 
 .container h2 {
@@ -15,17 +15,25 @@ body {
   padding: 1em;
 }
 
-.container p,
+.container p {
+  padding-top: 1em;
+  width: 90%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: 700;
+}
+
 .container ul {
-  padding-top: 0.5em;
-  margin-left: 2em;
-  width: 85%;
+  margin: 0px auto;
+  padding-top: 1em;
+  width: 90%;
   font-weight: 700;
 }
 
 .container ul li {
   line-height: 1.25em;
   font-weight: 600;
+  margin-left: 1em;
 }
 
 li::marker {
@@ -55,17 +63,27 @@ li::before {
   width: fit-content;
 }
 
-.Sign-up button {
+.Sign-up div {
   flex: 1;
+  width: fit-content;
   padding: 0.5em;
   margin-left: 10px;
+  margin-top: 5px;
+  background-color: rgb(230, 134, 25);
+  border-radius: 10px;
+  transition: ease 500ms;
+}
+
+.Sign-up div:hover {
+  cursor: pointer;
+  font-size: 1.1em;
 }
 
 @media screen and (max-width: 450px) {
   .Sign-up {
     display: block;
   }
-  .Sign-up button {
-    transform: translateX(30vw);
+  .Sign-up div {
+    transform: translateX(25vw);
   }
 }
