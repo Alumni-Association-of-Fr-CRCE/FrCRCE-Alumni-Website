@@ -1,6 +1,6 @@
 const loadnavbar = (navbar) => {
   if (window.location.pathname == "/") $(".head-nav").after(navbar);
-  else $("body").prepend(navbar);
+  else $(".page-container").prepend(navbar);
 };
 $(document).ready(function () {
   fetch("/Html/Components/navbar.html")

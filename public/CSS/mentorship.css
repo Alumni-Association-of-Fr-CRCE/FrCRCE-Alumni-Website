@@ -1,4 +1,4 @@
-.container h2 {
+.page-container h2 {
   background-image: url("/Assets/Images/mentorship2.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -10,9 +10,10 @@
   margin: 0 0 1em;
 }
 
-.container p {
+.page-container p {
   width: 85%;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .join-mentorship {
@@ -30,7 +31,7 @@
 }
 
 @media screen and (max-width: 680px) {
-  .container h2 {
+  .page-container h2 {
     background-size: cover;
   }
 }
