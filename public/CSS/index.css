@@ -35,6 +35,116 @@
   font-size: 1.15em;
 }
 
-.main {
-  position: absolute;
+.banner-pagination {
+  position: relative;
+  margin-top: -1%;
+  user-select: none;
+  z-index: 1;
+}
+
+.banner {
+  height: auto;
+  width: calc(100vw - 10%);
+  margin-top: 100px;
+  z-index: -1;
+}
+
+.banner-button-next,
+.banner-button-prev {
+  user-select: none;
+  z-index: 1;
+}
+
+.notable-alumni {
+  height: 250px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 15%;
+  z-index: 1;
+}
+
+.notable-alumni img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.notable-alumni .swiper-slide {
+  text-align: center;
+}
+
+/* Spotlight */
+.spotlight,
+.newsletter {
+  display: flex;
+  background-color: rgba(255, 0, 0, 0.7);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.spotlight-content,
+.newsletter-content {
+  width: auto;
+  padding: 1em;
+  color: white;
+  width: 50%;
+}
+
+.spotlight-content,
+.newsletter-content h2 {
+  margin-bottom: 10px;
+  font-size: 1.7em;
+}
+
+.spotlight-content,
+.newsletter-content p,
+div {
+  font-size: 1.05em;
+}
+
+.spotlight-content div {
+  margin-top: 2.5%;
+}
+
+.spotlight-frames iframe {
+  width: 40vw;
+  height: calc(40vw * 0.562);
+  padding: 1em;
+}
+
+.YT-Link {
+  text-decoration: none;
+  color: red;
+  background-color: white;
+  padding: 0.25em;
+  border-radius: 5px;
+  transition: ease-in 200ms;
+}
+
+.YT-Link:hover {
+  font-weight: 300;
+  background-color: rgb(255, 196, 0);
+}
+
+/* NewsLetters */
+.newsletter {
+  flex-direction: row-reverse;
+  background-color: rgba(46, 33, 230, 0.973);
+}
+
+@media screen and (max-width: 900px) {
+  .spotlight,
+  .newsletter {
+    flex-direction: column;
+  }
+  .spotlight-content,
+  .newsletter-content {
+    width: 90%;
+  }
+  .spotlight-frames iframe {
+    width: 90vw;
+    height: calc(90vw * 0.562);
+  }
 }

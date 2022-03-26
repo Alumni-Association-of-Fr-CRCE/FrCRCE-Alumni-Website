@@ -1,3 +1,7 @@
-body {
-  min-height: 100%;
+span {
+  display: block;
+  text-align: center;
+  width: 90%;
+  font-weight: 600;
+  padding: 1em;
 }

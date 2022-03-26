@@ -4,27 +4,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 85vh;
+  height: 70vh;
   margin-bottom: 30px;
   text-align: center;
+  position: relative;
 }
 
 .content-intro article {
-  margin-top: calc(70vh - 70px);
-  bottom: 0px;
+  position: absolute;
+  bottom: 5%;
   width: 85%;
   font-size: 1.25em;
   padding: 5% 5% 0 5%;
   color: white;
 }
 
-.content-intro::-webkit-scrollbar {
-  display: none;
-}
-.content {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
 .content-intro article::first-letter {
   font-size: 1.75em;
 }
@@ -46,20 +40,6 @@
 .mission h2,
 .objectives h2 {
   padding: 1em;
-}
-
-li::marker {
-  display: none;
-}
-
-li::before {
-  transform: translateX(-15px) translateY(5px);
-  position: absolute;
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 100%;
-  background-color: black;
 }
 
 .placeholder {

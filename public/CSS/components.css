@@ -5,8 +5,7 @@
 
 * {
   margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +18,7 @@ body {
 .page-conatiner {
   flex: 1;
   position: relative;
+  width: 100vw;
 }
 
 /* Navbar */
@@ -155,7 +155,7 @@ body {
 footer {
   margin-top: auto;
   display: flex;
-  width: 100vw;
+  max-width: 100vw;
   padding: 20px;
   background-color: #333333;
   flex-direction: row;
