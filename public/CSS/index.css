@@ -35,6 +35,10 @@
   font-size: 1.15em;
 }
 
+.swiper-cover {
+  position: relative;
+}
+
 .banner-pagination {
   position: relative;
   margin-top: -1%;
@@ -45,7 +49,7 @@
 .banner {
   height: auto;
   width: calc(100vw - 10%);
-  margin-top: 100px;
+  margin-top: calc(10% / 2);
   z-index: -1;
 }
 
@@ -59,12 +63,13 @@
   height: 250px;
   width: 90%;
   margin-left: 5%;
-  margin-top: 15%;
+  margin-top: calc(10% / 2);
   z-index: 1;
 }
 
 .notable-alumni img {
   width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
@@ -76,32 +81,33 @@
 .spotlight,
 .newsletter {
   display: flex;
-  background-color: rgba(255, 0, 0, 0.7);
+  background-color: var(--yellow-color);
   flex-direction: row;
   align-items: center;
   justify-content: center;
   height: auto;
-  margin-bottom: 10px;
 }
 
 .spotlight-content,
 .newsletter-content {
   width: auto;
   padding: 1em;
-  color: white;
+  color: #112d4e;
   width: 50%;
 }
 
-.spotlight-content,
+.spotlight-content h2,
 .newsletter-content h2 {
   margin-bottom: 10px;
-  font-size: 1.7em;
+  font-family: "Nexa", sans-serif;
+  font-size: 3rem;
 }
 
-.spotlight-content,
-.newsletter-content p,
-div {
-  font-size: 1.05em;
+.spotlight-content p,
+.spotlight-content div,
+.newsletter-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
 }
 
 .spotlight-content div {
@@ -109,15 +115,15 @@ div {
 }
 
 .spotlight-frames iframe {
-  width: 40vw;
-  height: calc(40vw * 0.562);
+  width: 35vw;
+  height: calc(35vw * 0.562);
   padding: 1em;
 }
 
 .YT-Link {
   text-decoration: none;
-  color: red;
-  background-color: white;
+  color: var(--yellow-color);
+  background-color: #112d4e;
   padding: 0.25em;
   border-radius: 5px;
   transition: ease-in 200ms;
@@ -125,13 +131,35 @@ div {
 
 .YT-Link:hover {
   font-weight: 300;
-  background-color: rgb(255, 196, 0);
+  background-color: #1c4777;
 }
 
 /* NewsLetters */
 .newsletter {
   flex-direction: row-reverse;
   background-color: rgba(46, 33, 230, 0.973);
+}
+
+.newsletter-releases,
+.swiper-wrapper {
+  width: 40vw;
+}
+
+.newsletter-releases img {
+  width: 225px;
+  padding: 1em;
+}
+
+.newsletter-releases a {
+  position: absolute;
+  left: 25%;
+  transform: translate(-25%, 0);
+  bottom: 60px;
+  padding: 0.4em;
+  border-radius: 10px;
+  background-color: var(--yellow-color);
+  color: red;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -146,5 +174,12 @@ div {
   .spotlight-frames iframe {
     width: 90vw;
     height: calc(90vw * 0.562);
+  }
+  .newsletter-releases {
+    width: 90vw;
+  }
+  .newsletter-releases a {
+    left: 120%;
+    transform: translate(-120%, 0);
   }
 }

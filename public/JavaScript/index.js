@@ -20,7 +20,7 @@ const banner = new Swiper(".banner", {
 });
 
 const notablealumni = new Swiper(".notable-alumni", {
-  slidesPerView: "auto",
+  slidesPerView: $(window).width() < 600 ? 1 : 4,
   grabCursor: true,
   spaceBetween: 30,
   //mousewheel: true,
@@ -34,7 +34,23 @@ const notablealumni = new Swiper(".notable-alumni", {
   },
 });
 
-$(window).on("resize", function () {
+const newsletters = new Swiper(".newsletter-releases", {
+  effect: "coverflow",
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  coverflowEffect: {
+    // rotate: 50,
+    // stretch: 0,
+    // depth: 100,
+    // modifier: 1,
+    slideShadows: false,
+  },
+});
+
+function resize() {
   if ($(window).width() < 600) {
     notablealumni.params.slidesPerView = 1;
   } else if ($(window).width() > 600 && $(window).width() < 900) {
@@ -45,4 +61,7 @@ $(window).on("resize", function () {
     notablealumni.params.slidesPerView = 4;
   }
   notablealumni.update();
-});
+}
+
+$(window).ready(resize);
+$(window).on("resize", resize);

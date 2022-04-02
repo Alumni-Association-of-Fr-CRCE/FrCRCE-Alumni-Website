@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("http://fonts.cdnfonts.com/css/nexa-bold?styles=29919");
+
 :root {
   --brown-color: #4f4049;
   --yellow-color: #f5d491;
@@ -159,6 +162,7 @@ footer {
   padding: 20px;
   background-color: #333333;
   flex-direction: row;
+  color: white;
 }
 
 .contact,

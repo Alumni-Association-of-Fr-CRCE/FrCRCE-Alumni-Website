@@ -1,0 +1,165 @@
+.page-container {
+  background: url(/Assets/Images/teamsbackground.svg) no-repeat;
+  background-size: cover;
+}
+
+.core-committee,
+.student-committee {
+  width: 100vw;
+  text-align: center;
+}
+.profile-cards {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.profile-card {
+  background-color: white;
+  font-size: 12px;
+  font-family: Comic Sans MS;
+  max-width: 300px;
+  box-shadow: -5px 2px 9px 4px rgb(70, 9, 103);
+  margin: 10px;
+}
+
+.profile-card .cover-photo {
+  background: var(--yellow-color);
+  width: 300px;
+  height: 100px;
+}
+
+.profile-card .photo {
+  background: #f9f9f9;
+  width: 300px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.profile-card img {
+  position: relative;
+  top: -80px;
+  /* max-width: 100%;
+  max-height: 100%; */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: -1px 1px 6px 6px rgba(189, 172, 172, 0.33);
+}
+.profile-card .content {
+  background: #f9f9f9;
+  width: 300px;
+  height: 100px;
+  position: relative;
+  top: -15px;
+}
+
+.profile-card .contact {
+  background: #30354d;
+  width: 300px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.profile-card h2 .name,
+.profile-card h3,
+.profile-card a {
+  margin: 0;
+  text-align: center;
+}
+
+.profile-card .name {
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+
+.profile-card .role,
+.profile-card .batch {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3em;
+  padding-bottom: 10px;
+}
+
+.profile-card a {
+  color: var(--yellow-color);
+  text-decoration: none;
+}
+
+.profile-card a:hover {
+  color: black;
+}
+
+.profile-card ul {
+  padding: 0;
+}
+
+.profile-card .fa-brands {
+  font-size: 22px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--yellow-color);
+}
+
+.profile-card .fa-brands:hover {
+  color: white;
+}
+
+.profile-card:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.02, 1.02, 1.02);
+    transform: scale3d(1.02, 1.02, 1.02);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.02, 1.02, 1.02);
+    transform: scale3d(1.02, 1.02, 1.02);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.core-committee h1,
+.student-committee h1 {
+  font-family: "Nexa", sans-serif;
+  color: white;
+  font-size: 2rem;
+  padding: 1em;
+}

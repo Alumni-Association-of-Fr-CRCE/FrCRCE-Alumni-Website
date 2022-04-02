@@ -6,24 +6,70 @@ body {
 h2 {
   text-align: center;
   display: block;
-  padding: 1em;
-}
-
-.contributer {
-  display: block;
-  background-color: rgb(7, 10, 149);
-  border-radius: 10px;
-  color: white;
-  padding: 1em;
-  margin: 0.5em auto;
-  width: 90%;
-  transition: ease 100ms;
-}
-
-.contributer h3 {
-  padding: 0.25em;
+  padding: 0.5em;
+  font-family: "Nexa", sans-serif;
+  font-size: 3rem;
 }
 
 .contributer:hover {
   padding: 1.2em;
+}
+
+.contributer {
+  box-shadow: -7px 4px 11px 6px #ccc;
+  background-color: #112d4e;
+  transition: ease 100ms;
+  text-align: center;
+  height: auto;
+  width: 90%;
+  padding: 1em;
+  border-radius: 10px;
+  margin: 0.5em auto;
+  color: white;
+}
+
+.contributer-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.contributer-content p,
+p {
+  color: var(--yellow-color);
+  padding: 0.25em;
+  max-width: 55%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  margin: auto auto;
+}
+
+.contributer h3 {
+  padding: 0.5em;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-family: "Nexa", sans-serif;
+}
+
+.contributer-pic {
+  text-align: center;
+  justify-content: center;
+  margin: auto auto;
+}
+
+.contributer-pic img {
+  height: calc(40vw * 0.562);
+  min-height: 200px;
+  max-height: 300px;
+}
+
+@media screen and (max-width: 1080px) {
+  .contributer-content {
+    flex-direction: column-reverse;
+    margin: 0px;
+  }
+  .contributer-content p,
+  p {
+    max-width: none;
+    width: 90%;
+  }
 }

@@ -1,7 +1,113 @@
-span {
-  display: block;
+.page-container {
+  overflow-x: hidden;
+}
+
+.page-container article {
   text-align: center;
-  width: 90%;
-  font-weight: 600;
+  margin: 0 auto;
+  width: 95%;
+  font-family: "Nexa", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1em 0;
+}
+
+.page-container p,
+.page-container p:nth-of-type(2),
+ul {
+  width: 85%;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding: 0.5em 0;
+}
+
+.page-container p:nth-of-type(2) {
+  font-weight: 700;
+  text-align: center;
+}
+
+.page-container h3 {
+  position: relative;
   padding: 1em;
+  border-radius: 10px;
+  color: var(--yellow-color);
+  background-color: #112d4e;
+  width: fit-content;
+  margin-left: 30px;
+  margin: 1em;
+  font-family: "Nexa", sans-serif;
+  font-size: 1.2rem;
+}
+
+.page-container h3::before {
+  content: "";
+  background-color: #112d4e;
+  position: absolute;
+  height: 10px;
+  width: 50vw;
+  top: 25px;
+  left: -50vw;
+}
+
+.page-container h3:after {
+  content: "";
+  background-color: #112d4e;
+  position: absolute;
+  height: 10px;
+  width: 90vw;
+  top: 25px;
+  right: -90vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.charity-pic {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.charity-pic img {
+  height: calc(40vw * 0.562);
+  min-height: 200px;
+  max-height: 250px;
+  border-radius: 5px;
+}
+
+.content li {
+  margin-left: 25px;
+}
+
+.scholarship div p {
+  margin-top: 5%;
+}
+
+.page-container h4 {
+  width: 85%;
+  margin: 0 auto;
+  font-family: "Nexa", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1080px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+  .page-container h3 {
+    margin: 1em auto;
+  }
+  .page-container h3::before {
+    left: -50vw;
+  }
+  .scholarship div p {
+    margin-top: 0;
+  }
 }
