@@ -1,0 +1,21 @@
+College name on left nav
+highlight headings 
+spotlight scrollable
+pagination for newsletter
+notable alumni linkedin link
+upcoming events -> highlights
+distinguised alumni
+all para justified
+click here common for all
+all redirect links on new tab
+footer mail/phone number
+all banner redirect link
+about team background color/image
+old and new committee
+team sub dir in nav
+member counter/alumni count in head nav
+head nav below header
+anual report in text of each report header
+https://pay.fragnel.edu.in/CRCE/initPay.php?p=alumni corpus button |// 
+Alumni Give button linking to gform and payment link
+Gallary of pictures

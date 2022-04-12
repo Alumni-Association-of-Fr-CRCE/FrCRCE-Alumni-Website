@@ -1,0 +1,56 @@
+.main {
+  display: block;
+  padding: 1em;
+  background-color: #f5d491;
+  color: #333333;
+}
+
+.main .college-name {
+  display: block;
+  text-align: center;
+}
+
+.main hr {
+  width: 90%;
+  margin: 1em auto;
+  background-color: #333333;
+  height: 3px;
+  border: none;
+  border-radius: 90%;
+}
+
+.main .stats {
+  display: flex;
+}
+
+.main .stats count {
+  flex: 50%;
+  text-align: center;
+}
+
+.main .quick-links {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0.5em;
+  background-color: #333333;
+  border-radius: 10px;
+}
+
+.main .quick-links div {
+  flex: 33%;
+  display: inline;
+  padding: 1em;
+  color: #f5d491;
+  border-radius: 10px;
+}
+
+.main .quick-links div:hover {
+  background-color: #404040;
+}
+
+@media screen and (max-width: 500px) {
+  .main .quick-links div {
+    display: block;
+  }
+}

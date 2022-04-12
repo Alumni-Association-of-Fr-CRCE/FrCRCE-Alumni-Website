@@ -36,17 +36,22 @@ const notablealumni = new Swiper(".notable-alumni", {
 
 const newsletters = new Swiper(".newsletter-releases", {
   effect: "coverflow",
-  slidesPerView: "auto",
-  spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 0,
   grabCursor: true,
   loop: true,
   centeredSlides: true,
   coverflowEffect: {
-    // rotate: 50,
-    // stretch: 0,
+    rotate: 50,
+    stretch: 0,
     // depth: 100,
-    // modifier: 1,
+    modifier: 1,
     slideShadows: false,
+  },
+  speed: 500,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
   },
 });
 
@@ -65,3 +70,20 @@ function resize() {
 
 $(window).ready(resize);
 $(window).on("resize", resize);
+
+$(".count").each(function () {
+  $(this)
+    .prop("Counter", 0)
+    .animate(
+      {
+        Counter: $(this).text(),
+      },
+      {
+        duration: 5000,
+        easing: "swing",
+        step: function (now) {
+          $(this).text(Math.ceil(now));
+        },
+      }
+    );
+});

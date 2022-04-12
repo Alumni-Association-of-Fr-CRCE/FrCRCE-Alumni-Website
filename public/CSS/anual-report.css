@@ -1,33 +1,72 @@
-body {
+.page-container {
+  width: 100%;
   text-align: center;
-  width: 100vw;
 }
 
 .row {
   width: fit-content;
   overflow-y: hidden;
+  position: absolute;
+  right: 0px;
   float: right;
+  height: 250px;
   padding-right: 50px;
+  font-family: "Nexa", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 15px;
 }
 
 .column {
-  transform: rotateZ(90deg) translateX(-70px);
+  transform: rotateZ(90deg) translateX(-40px);
   float: left;
   padding: 25px;
   text-align: center;
   font-size: 25px;
   cursor: pointer;
   background-color: rgba(109, 252, 252, 0.795);
-  border-radius: 10px;
   margin-right: -80px;
+  transition: 300ms ease-in-out;
+  border-radius: 15px;
+}
+
+.column:hover {
+  margin-top: 85px;
 }
 
 .containerTab {
-  padding: 20px;
-  background-color: rgba(187, 67, 243, 0.795);
+  padding: 5%;
+  background-color: var(--brown-color);
+  color: var(--yellow-color);
   border-radius: 30px;
-  width: 90%;
-  margin: 0px auto 20px;
+  width: 87.5%;
+  margin: 5% auto 20px;
+  text-align: center;
+}
+
+.containerTab h2,
+.containerTab h3 {
+  font-family: "Nexa", sans-serif;
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+.containerTab h3 {
+  font-size: 2rem;
+}
+
+.containerTab p,
+.containerTab ul {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  text-align: justify;
+  padding: 0.25em;
+}
+
+.containerTab ul {
+  margin: 0.75em;
+  margin-left: 1em;
+  text-align: left;
 }
 
 /* Clear floats after the columns */
@@ -37,18 +76,39 @@ body {
   clear: both;
 }
 
-/* Closable button inside the image */
-.closebtn {
-  float: right;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-
 .containerTab h2 {
-  padding: 1em;
+  padding: 1em auto;
+  padding-top: 1em;
 }
 
 .page-container h3 {
   padding: 0.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    float: none;
+  }
+  .column {
+    transform: none;
+    float: none;
+    display: block;
+    padding: 0.5em;
+    width: 90%;
+    margin: 0.25em auto;
+  }
+  .containerTab {
+    margin: 2% auto;
+    border-radius: 0;
+    width: 90%;
+  }
+  .column:hover {
+    margin-top: 0.25em;
+  }
+  .page-container {
+    overflow-x: hidden;
+  }
 }

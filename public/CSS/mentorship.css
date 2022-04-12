@@ -5,13 +5,14 @@
   padding-bottom: 1em;
 }
 
-.header h2 {
-  font-family: "Nexa", sans-serif;
-  font-size: 3rem;
+.title {
   position: absolute;
   display: block;
   width: 100vw;
-  top: 5px;
+  top: 3px;
+  font-family: "Arvo", serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px rgba(28, 28, 28, 0.628);
 }
 
 .header img {
@@ -21,6 +22,9 @@
 }
 
 .page-container p {
+  /* border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px grey; */
+  padding: 0.25em;
   width: 85%;
   margin: 0 auto;
   text-align: justify;
@@ -30,10 +34,11 @@
 }
 
 .join-mentorship {
-  padding: 0.5em;
+  padding: 0.75em;
   width: fit-content;
   margin: 1em auto;
-  background-color: rgb(230, 134, 25);
+  background-color: #112d4e;
+  color: var(--yellow-color);
   border-radius: 10px;
   transition: ease 500ms;
   font-family: "Montserrat", sans-serif;
@@ -50,7 +55,7 @@
   .page-container h2 {
     background-size: cover;
   }
-  .header h2 {
+  .title {
     position: relative;
     transform: none;
     margin: 0 auto;

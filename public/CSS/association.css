@@ -1,3 +1,15 @@
+.placeholder h2 {
+  font-size: 2rem;
+  /* font-family: "Nexa", sans-serif; */
+}
+
+.placeholder p,
+.placeholder ul {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 550;
+}
+
 .content-intro {
   display: block;
   background-image: url(/Assets/Images/alumni.png);
@@ -14,9 +26,10 @@
   position: absolute;
   bottom: 5%;
   width: 85%;
-  font-size: 1.25em;
+  font-size: 1.2em;
   padding: 5% 5% 0 5%;
   color: white;
+  font-family: "Nexa", sans-serif;
 }
 
 .content-intro article::first-letter {
@@ -44,7 +57,8 @@
 
 .placeholder {
   margin-top: -30px;
-  background-color: var(--yellow-color);
+  background-color: #a791a5; /*#285e9c; */
+  color: #20181c;
 }
 
 .placeholder ul {
@@ -52,8 +66,20 @@
   padding: 1em;
 }
 
+.title {
+  text-align: center;
+  padding: 0.75em;
+  font-family: "Arvo", serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px rgba(28, 28, 28, 0.628);
+}
+
 @media screen and (max-width: 600px) {
   .placeholder ul {
     margin-left: 2em;
+  }
+  .content-intro article {
+    font-size: 1.1em;
+    bottom: 2%;
   }
 }

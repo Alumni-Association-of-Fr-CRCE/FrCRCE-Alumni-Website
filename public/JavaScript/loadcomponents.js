@@ -1,11 +1,7 @@
-const loadnavbar = (navbar) => {
-  if (window.location.pathname == "/") $(".head-nav").after(navbar);
-  else $(".page-container").prepend(navbar);
-};
 $(document).ready(function () {
   fetch("/Html/Components/navbar.html")
     .then((response) => response.text())
-    .then((navbar) => loadnavbar(navbar));
+    .then((navbar) => $(".page-container").prepend(navbar));
   fetch("/Html/Components/footer.html")
     .then((response) => response.text())
     .then((footer) => $("body").append(footer));
