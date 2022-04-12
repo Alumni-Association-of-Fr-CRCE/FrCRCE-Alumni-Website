@@ -61,6 +61,7 @@ p {
   height: calc(40vw * 0.562);
   min-height: 200px;
   max-height: 300px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1080px) {

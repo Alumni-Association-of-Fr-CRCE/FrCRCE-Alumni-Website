@@ -22,8 +22,8 @@
 }
 
 .page-container p {
-  /* border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px grey; */
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px grey;
   padding: 0.25em;
   width: 85%;
   margin: 0 auto;
