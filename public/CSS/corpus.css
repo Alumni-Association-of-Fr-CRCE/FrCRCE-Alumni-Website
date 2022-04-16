@@ -1,5 +1,6 @@
 .page-container {
   overflow-x: hidden;
+  margin-bottom: 2em;
 }
 
 .page-container article {
@@ -35,6 +36,7 @@ ul {
   color: var(--yellow-color);
   background-color: #112d4e;
   width: fit-content;
+  width: -moz-max-content;
   margin-left: 30px;
   margin: 1em;
   font-family: "Nexa", sans-serif;
@@ -93,8 +95,15 @@ ul {
   width: 85%;
   margin: 0 auto;
   font-family: "Nexa", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.page-container h4 i {
+  margin-left: 10px;
   font-size: 1.1rem;
-  font-weight: 900;
 }
 
 @media screen and (max-width: 1080px) {

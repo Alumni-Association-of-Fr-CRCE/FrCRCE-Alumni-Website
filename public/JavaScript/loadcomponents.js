@@ -1,7 +1,7 @@
 $(document).ready(function () {
   fetch("/Html/Components/navbar.html")
     .then((response) => response.text())
-    .then((navbar) => $(".page-container").prepend(navbar));
+    .then((navbar) => $("body").prepend(navbar));
   fetch("/Html/Components/footer.html")
     .then((response) => response.text())
     .then((footer) => $("body").append(footer));

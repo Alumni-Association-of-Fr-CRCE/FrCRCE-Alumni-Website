@@ -28,7 +28,11 @@ body {
 /* Navbar */
 
 .topnav {
-  overflow: hidden;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  width: 100%;
+  /* overflow: hidden; */
   background-color: #333333;
   color: var(--yellow-color);
   display: flex;

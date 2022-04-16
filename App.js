@@ -26,8 +26,12 @@ router.get("/Activity/Anual-Report", function (req, res) {
   res.sendFile(path.join(__dirname + "/Html/anual-report.html"));
 });
 
-router.get("/Activity/Alumni-Meet", function (req, res) {
-  res.sendFile(path.join(__dirname + "/Html/alumni-meet.html"));
+router.get("/Activity/Gallary", function (req, res) {
+  res.sendFile(path.join(__dirname + "/Html/gallary.html"));
+});
+
+router.get("/Activity/Spotlights", function (req, res) {
+  res.sendFile(path.join(__dirname + "/Html/spotlights.html"));
 });
 
 //  Give Sub-Sections
@@ -44,8 +48,12 @@ router.get("/Give/Mentorship", function (req, res) {
 });
 
 //  Contribution
-router.get("/Contributions", function (req, res) {
+router.get("/Contributions/Contributers", function (req, res) {
   res.sendFile(path.join(__dirname + "/Html/contributions.html"));
+});
+
+router.get("/Contributions/Testimonials", function (req, res) {
+  res.sendFile(path.join(__dirname + "/Html/testimonials.html"));
 });
 
 app.use("/", router);
