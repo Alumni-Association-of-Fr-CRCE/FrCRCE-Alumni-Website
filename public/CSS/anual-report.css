@@ -85,6 +85,25 @@
   padding: 0.5em;
 }
 
+.gallary {
+  padding: 0.75em;
+  width: fit-content;
+  width: -moz-max-content;
+  margin: 1em auto;
+  background-color: #112d4e;
+  color: var(--yellow-color);
+  border-radius: 10px;
+  transition: ease 500ms;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.gallary:hover {
+  transform: scale3d(1.12, 1.12, 1.12);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   .row {
     position: relative;

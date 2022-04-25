@@ -209,15 +209,20 @@ q {
   width: 300px;
 }
 
-.newsletter-releases img {
+/* .newsletter-releases {
   width: 225px;
-  padding: 1em;
+} */
+
+.newsletter-releases img {
+  width: inherit;
+  height: inherit;
+  padding: 1em 0;
 }
 
 .newsletter-releases a {
   position: absolute;
-  left: 42%;
-  transform: translate(-42%, 0);
+  left: 50%;
+  transform: translate(-50%, 0);
   bottom: 60px;
   padding: 0.4em;
   border-radius: 10px;
@@ -233,6 +238,10 @@ q {
   margin: 0.5em;
   font-weight: 2rem;
   text-shadow: 5px 2px 5px #333333;
+}
+
+.newsletter img {
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 900px) {
