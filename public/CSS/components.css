@@ -65,6 +65,7 @@ body {
   float: left;
   overflow: hidden;
   margin: 2em 1em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .dropdown .dropbtn {
