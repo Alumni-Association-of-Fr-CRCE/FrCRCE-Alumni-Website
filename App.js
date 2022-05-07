@@ -7,6 +7,11 @@ const port = 8080;
 
 app.use(express.static(path.join(__dirname)));
 
+// API
+router.get("/api/spotlights", function (req, res) {
+  res.sendFile(path.join(__dirname + "/Data/spotlights.json"));
+});
+
 //  Home
 router.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/Html/index.html"));
