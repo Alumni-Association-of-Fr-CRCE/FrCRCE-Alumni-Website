@@ -1,0 +1,104 @@
+.page-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  padding: 0.75em;
+  font-family: "Arvo", serif;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px rgb(28 28 28 / 63%);
+}
+
+header {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+header q {
+  display: block;
+  margin: 0.5em auto;
+  margin-top: -0.5em;
+  text-align: center;
+}
+
+header p {
+  text-align: justify;
+}
+
+header div {
+  width: max-content;
+  border-radius: 15px;
+  margin: 0.5em auto;
+  padding: 1em;
+  cursor: pointer;
+  background-color: var(--yellow-color);
+}
+
+.horbreak {
+  margin: 0.5em 1em;
+  height: 2px;
+  border: none;
+  background-color: var(--brown-color);
+}
+
+.pictures {
+  margin: 1em;
+}
+
+.header {
+  color: var(--brown-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 0.75em;
+  margin-left: 1em;
+}
+
+.header::before {
+  content: "";
+  margin: -0.25em -1em;
+  width: 15px;
+  height: 35.6px;
+  position: absolute;
+  background-color: var(--yellow-color);
+}
+
+.collapsible .fa {
+  height: 21px;
+  width: 21px;
+  float: right;
+}
+
+.collapsible {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  border-radius: 5px;
+  background-color: #4f4049;
+  color: var(--yellow-color);
+  cursor: pointer;
+  padding: 18px;
+  padding-left: 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-top: 1em;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #61505a;
+}
+
+.content {
+  margin-top: 0.5em;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 @import url("http://fonts.cdnfonts.com/css/nexa-bold?styles=29919");
-/* @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap"); */
 
 :root {
   --brown-color: #4f4049;
@@ -53,8 +52,27 @@ body {
   margin: 2em 1em;
 }
 
+.topnav a:first-child {
+  display: flex;
+}
+
 .topnav a img {
-  width: 90px;
+  width: 103.5px;
+  height: 90px;
+}
+
+.topnav .logo-text {
+  display: block;
+  text-align: justify;
+  padding-top: 5%;
+}
+
+.topnav .vertical {
+  transform: rotateZ(90deg) translateX(75px);
+  background-color: #f5d491;
+  width: 100px;
+  height: 1.5px;
+  margin: -35px;
 }
 
 .topnav .icon {
@@ -113,6 +131,10 @@ body {
 }
 
 @media screen and (max-width: 940px) {
+  .logo-text,
+  .vertical {
+    display: none !important;
+  }
   .topnav {
     display: block;
   }
@@ -131,9 +153,6 @@ body {
   .topnav a:nth-child(5) {
     margin: 0px;
   }
-}
-
-@media screen and (max-width: 940px) {
   .topnav.responsive {
     position: relative;
   }
@@ -174,7 +193,6 @@ footer {
 .fcontact,
 .links,
 .social {
-  /* flex: 33%;*/
   min-width: 250px;
   max-width: 350px;
   margin: 1em auto;
@@ -194,10 +212,6 @@ footer {
   color: white;
 }
 
-.fcontact img {
-  width: 130px;
-}
-
 .fcontact .fa {
   color: white;
   font-size: 1.2rem;
@@ -206,7 +220,7 @@ footer {
   padding-right: 0.75em;
 }
 
-.fcontact .fa:hover {
+.fcontact div a:hover > i {
   color: rgba(206, 62, 62, 0.763);
 }
 
@@ -214,16 +228,20 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin-top: 20px;
 }
 
 .links a {
-  /* margin-left: 40%; */
+  padding-left: 0.5em;
   transition: 200ms ease-in-out;
-  padding: 0.15em 0;
 }
 
-.links a:hover {
-  padding-left: 15px;
+.links .link {
+  padding: 0px;
+}
+
+.links div:hover a {
+  margin-left: 20px;
   color: var(--yellow-color);
 }
 
@@ -246,14 +264,6 @@ footer {
   height: 40px;
 }
 
-.social a img:hover {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -299,17 +309,11 @@ footer address {
   font-size: 1rem;
 }
 
-.fcontact div:first-child,
-.links div,
-.social div {
+.head {
   padding: 0.25em;
   font-family: "Monserrat", sans-serif;
   font-size: 1.2em;
   color: var(--yellow-color);
-}
-
-.links a {
-  padding-left: 0.5em;
 }
 
 footer hr {
@@ -334,4 +338,9 @@ footer hr {
     border-radius: 20%;
     border: none;
   }
+}
+
+.pulse:hover {
+  animation: pulse 1s both;
+  -webkit-animation: pulse 1s both;
 }

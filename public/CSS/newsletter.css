@@ -1,0 +1,102 @@
+.page-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.newsletters {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  gap: 2em;
+}
+
+.newsletter {
+  margin: 0 auto;
+  width: min-content;
+}
+
+.newsletter .info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  position: relative;
+  width: 250px;
+  /* display: inline-block; */
+  margin: 1em;
+  margin-left: 5px;
+  padding: 10px 20px;
+}
+
+.newsletter .info::before {
+  background: var(--yellow-color);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: skew(-9deg);
+  -moz-transform: skew(-9deg);
+  -o-transform: skew(-9deg);
+  transform: skew(-9deg);
+  z-index: -1;
+}
+
+.newsletter .info::after {
+  background: var(--brown-color);
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -20px;
+  height: 100%;
+  width: 10px;
+  -webkit-transform: skew(-9deg);
+  -moz-transform: skew(-9deg);
+  -o-transform: skew(-9deg);
+  transform: skew(-9deg);
+}
+
+.newsletter img {
+  width: 20%;
+  min-width: 300px;
+  margin-left: 10px;
+}
+
+.title {
+  text-align: center;
+  padding: 0.75em;
+  font-family: "Arvo", serif;
+  font-size: 3rem;
+}
+
+.flipbook-overlay {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+span {
+  color: var(--brown-color) !important;
+}
+
+.fa-angle-right,
+.fa-angle-left {
+  color: var(--yellow-color) !important;
+}
+
+@media screen and (max-width: 480px) {
+  .newsletter {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .newsletters {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}

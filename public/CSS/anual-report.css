@@ -136,22 +136,22 @@
 .event-detail {
   display: flex;
   flex-direction: row;
+  gap: 2em;
 }
 
 .event-detail p {
   color: var(--yellow-color);
-  padding: 0.25em;
-  max-width: 55%;
+  /* padding: 0.25em; */
+  max-width: 70%;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
-  margin: auto auto;
+  font-size: 1.25rem;
   text-align: justify;
+  align-self: center;
 }
 
 .event-detail-pic {
   text-align: center;
   justify-content: center;
-  margin: auto auto;
 }
 
 .event-detail-pic img {
@@ -170,4 +170,26 @@
     max-width: none;
     width: 90%;
   }
+}
+
+.horbreak {
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-color: var(--yellow-color);
+  margin: 0 auto;
+}
+
+.panel-discussions {
+  margin: 2em 0;
+}
+
+.panel-discussions img {
+  margin: 0.5em;
+  max-width: 85vw;
+}
+
+.panel-discussions p {
+  width: 90%;
+  margin: 0 auto;
 }

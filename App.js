@@ -1,19 +1,44 @@
 const express = require("express");
 const path = require("path");
+const cors = require("cors");
+const fs = require("fs");
+
 const router = express.Router();
 const app = express();
-__dirname = path.join(__dirname + "/public");
 const port = 8080;
 
+__dirname = path.join(__dirname + "/public");
+
+app.use(cors());
 app.use(express.static(path.join(__dirname)));
 
+//Function
+function updateVisCount(key) {
+  fs.readFile(path.join(__dirname + "/Data/visitors.json"), (err, data) => {
+    if (err) throw err;
+    let info = JSON.parse(data);
+    info[key] += 1;
+    fs.writeFileSync(
+      path.join(__dirname + "/Data/visitors.json"),
+      JSON.stringify(info)
+    );
+    console.log("Count Updated");
+  });
+}
+
+router.get("/Activity/Newsletters/read", function (req, res) {
+  updateVisCount(req.url.split("/").pop());
+});
+
 // API
-router.get("/api/spotlights", function (req, res) {
-  res.sendFile(path.join(__dirname + "/Data/spotlights.json"));
+router.get("/api/spotlights", async (req, res) => {
+  const spotlights = require(path.join(__dirname + "/Data/spotlights.json"));
+  res.json(spotlights);
 });
 
 //  Home
 router.get("/", function (req, res) {
+  updateVisCount("site");
   res.sendFile(path.join(__dirname + "/Html/index.html"));
 });
 
@@ -31,12 +56,16 @@ router.get("/Activity/Anual-Report", function (req, res) {
   res.sendFile(path.join(__dirname + "/Html/anual-report.html"));
 });
 
-router.get("/Activity/Gallary", function (req, res) {
-  res.sendFile(path.join(__dirname + "/Html/gallary.html"));
+router.get("/Activity/Gallery", function (req, res) {
+  res.sendFile(path.join(__dirname + "/Html/gallery.html"));
 });
 
 router.get("/Activity/Spotlights", function (req, res) {
   res.sendFile(path.join(__dirname + "/Html/spotlights.html"));
+});
+
+router.get("/Activity/Newsletters", function (req, res) {
+  res.sendFile(path.join(__dirname + "/Html/newsletter.html"));
 });
 
 //  Give Sub-Sections

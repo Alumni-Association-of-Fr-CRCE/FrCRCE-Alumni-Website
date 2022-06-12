@@ -15,6 +15,7 @@ function spotlight(data) {
   //Set Attributes
   spotlight.className = "spotlight";
   videoframe.className = "video";
+  videoframe.loading = "lazy";
   videoframe.src = YTUrl;
   videoframe.title = "YouTube video player";
   videoframe.setAttribute("frameborder", "0");
