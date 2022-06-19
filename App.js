@@ -36,6 +36,18 @@ router.get("/api/spotlights", async (req, res) => {
   res.json(spotlights);
 });
 
+router.get("/api/gallery", async (req, res) => {
+  const gallery = require(path.join(__dirname + "/Data/gallery.json"));
+  res.json(gallery);
+});
+
+router.get("/api/testimonials", async (req, res) => {
+  const testimonials = require(path.join(
+    __dirname + "/Data/testimonials.json"
+  ));
+  res.json(testimonials);
+});
+
 //  Home
 router.get("/", function (req, res) {
   updateVisCount("site");

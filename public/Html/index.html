@@ -145,8 +145,9 @@
         </div>
         <div class="spotlight-frames">
           <iframe
+            id="frame"
             loading="lazy"
-            src="https://www.youtube.com/embed/FYYCXwGYgsE"
+            src=""
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -154,7 +155,15 @@
           ></iframe>
         </div>
       </div>
-
+      <script>
+        async function loadLatestSpotlight() {
+          const data = await fetch("/api/spotlights");
+          const spotlights = await data.json();
+          const frame = document.getElementById("frame");
+          frame.src = spotlights[0].YTUrl;
+        }
+        loadLatestSpotlight();
+      </script>
       <div class="newsletter">
         <div class="newsletter-content">
           <h2 class="title" style="text-shadow: 2px 2px 2px #f5d4918a">
