@@ -4,6 +4,8 @@
 }
 
 .row {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   overflow-y: hidden;
   position: absolute;
@@ -18,6 +20,8 @@
 }
 
 .column {
+  -webkit-transform: rotateZ(90deg) translateX(-40px);
+  -ms-transform: rotate(90deg) translateX(-40px);
   transform: rotateZ(90deg) translateX(-40px);
   float: left;
   padding: 25px;
@@ -26,6 +30,8 @@
   cursor: pointer;
   background-color: rgba(109, 252, 252, 0.795);
   margin-right: -80px;
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
   border-radius: 15px;
 }
@@ -87,12 +93,16 @@
 
 .gallary {
   padding: 0.75em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   width: -moz-max-content;
   margin: 1em auto;
   background-color: #112d4e;
   color: var(--yellow-color);
   border-radius: 10px;
+  -webkit-transition: ease 500ms;
+  -o-transition: ease 500ms;
   transition: ease 500ms;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
@@ -100,6 +110,7 @@
 }
 
 .gallary:hover {
+  -webkit-transform: scale3d(1.12, 1.12, 1.12);
   transform: scale3d(1.12, 1.12, 1.12);
   cursor: pointer;
 }
@@ -107,11 +118,16 @@
 @media screen and (max-width: 900px) {
   .row {
     position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     float: none;
   }
   .column {
+    -webkit-transform: none;
+    -ms-transform: none;
     transform: none;
     float: none;
     display: block;
@@ -134,7 +150,12 @@
 }
 
 .event-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   gap: 2em;
 }
@@ -146,11 +167,15 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   text-align: justify;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 
 .event-detail-pic {
   text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -163,6 +188,9 @@
 
 @media screen and (max-width: 1080px) {
   .event-detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     margin: 0px;
   }

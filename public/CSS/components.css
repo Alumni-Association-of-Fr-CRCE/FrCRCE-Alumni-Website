@@ -13,12 +13,19 @@
 
 body {
   font-family: Arial;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .page-conatiner {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   position: relative;
   width: 100vw;
@@ -34,8 +41,14 @@ body {
   /* overflow: hidden; */
   background-color: #333333;
   color: var(--yellow-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -53,6 +66,8 @@ body {
 }
 
 .topnav a:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -68,6 +83,8 @@ body {
 }
 
 .topnav .vertical {
+  -webkit-transform: rotateZ(90deg) translateX(75px);
+  -ms-transform: rotate(90deg) translateX(75px);
   transform: rotateZ(90deg) translateX(75px);
   background-color: #f5d491;
   width: 100px;
@@ -102,6 +119,7 @@ body {
   position: absolute;
   background-color: rgb(48, 48, 48);
   min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -183,9 +201,15 @@ body {
 /* Footer */
 footer {
   margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #333333;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   color: white;
 }
@@ -197,6 +221,8 @@ footer {
   max-width: 350px;
   margin: 1em auto;
   text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -215,6 +241,8 @@ footer {
 .fcontact .fa {
   color: white;
   font-size: 1.2rem;
+  -webkit-transition: 200ms ease-in-out;
+  -o-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
   padding: 0.25em;
   padding-right: 0.75em;
@@ -225,7 +253,12 @@ footer {
 }
 
 .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: left;
   margin-top: 20px;
@@ -233,6 +266,8 @@ footer {
 
 .links a {
   padding-left: 0.5em;
+  -webkit-transition: 200ms ease-in-out;
+  -o-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
 }
 
@@ -247,6 +282,8 @@ footer {
 
 .social a img {
   width: 30px;
+  -webkit-transition: 200ms ease-in-out;
+  -o-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
 }
 

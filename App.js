@@ -12,24 +12,6 @@ __dirname = path.join(__dirname + "/public");
 app.use(cors());
 app.use(express.static(path.join(__dirname)));
 
-//Function
-function updateVisCount(key) {
-  fs.readFile(path.join(__dirname + "/Data/visitors.json"), (err, data) => {
-    if (err) throw err;
-    let info = JSON.parse(data);
-    info[key] += 1;
-    fs.writeFileSync(
-      path.join(__dirname + "/Data/visitors.json"),
-      JSON.stringify(info)
-    );
-    console.log("Count Updated");
-  });
-}
-
-router.get("/Activity/Newsletters/read", function (req, res) {
-  updateVisCount(req.url.split("/").pop());
-});
-
 // API
 router.get("/api/spotlights", async (req, res) => {
   const spotlights = require(path.join(__dirname + "/Data/spotlights.json"));
@@ -54,7 +36,6 @@ router.get("/api/alumni", async (req, res) => {
 });
 //  Home
 router.get("/", function (req, res) {
-  updateVisCount("site");
   res.sendFile(path.join(__dirname + "/Html/index.html"));
 });
 
