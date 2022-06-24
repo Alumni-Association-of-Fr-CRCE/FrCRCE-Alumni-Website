@@ -48,6 +48,10 @@ router.get("/api/testimonials", async (req, res) => {
   res.json(testimonials);
 });
 
+router.get("/api/alumni", async (req, res) => {
+  const alumni = require(path.join(__dirname + "/Data/alumni.json"));
+  res.json(alumni);
+});
 //  Home
 router.get("/", function (req, res) {
   updateVisCount("site");
