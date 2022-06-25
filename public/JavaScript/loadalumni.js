@@ -1,7 +1,6 @@
 function createAlumniCard(data) {
   return `<div class="swiper-slide">
             <img
-              loading="lazy"
               src="${data["img"]}"
               alt="Mr. Mihir Karkare"
             />
@@ -16,6 +15,7 @@ async function loadAlumni() {
   let container = document.getElementById("notablealumni");
   for (let i = 0; i < alumni.length; i++)
     container.insertAdjacentHTML("beforeend", createAlumniCard(alumni[i]));
+    // console.log(createAlumniCard(alumni[i]));
 }
 
-loadAlumni();
+// loadAlumni();

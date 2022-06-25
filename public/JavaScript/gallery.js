@@ -22,7 +22,7 @@ async function insertImages() {
     for (let i = 0; i < images[id].length; i++) {
       let image = document.createElement("img");
       image.setAttribute("src", images[id][i]);
-      image.loading = "lazy";
+      // image.loading = "lazy";
       // image.classList.add("lozad");
       columns[col].appendChild(image);
       col = col === 0 ? 1 : 0;

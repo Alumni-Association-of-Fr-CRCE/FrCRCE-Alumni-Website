@@ -1,7 +1,7 @@
 function createTestimonial(data) {
   return `<div class="testimonial">
         <div class="details">
-            <img src="${data["img"]}" alt="${data["name"]}" />
+            <img src="${data["img"]}" alt="${data["name"]}" width="90" height="90" />
             <div class="profile">
                 <h3 class="name">${data["name"]}</h3>
                 <p class="batch">${data["batch"]}</p>
