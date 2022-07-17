@@ -141,6 +141,7 @@
 
 .notable-alumni .swiper-slide {
   text-align: center;
+  cursor: pointer;
 }
 
 /* Spotlight */
@@ -312,4 +313,9 @@ q {
   .page-container .title {
     font-size: 2rem;
   }
+}
+
+.fa-linkedin {
+  color: #0072b1;
+  margin-right: 5px;
 }
