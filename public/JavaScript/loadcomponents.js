@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  fetch("/public//Html/Components/navbar.html")
+  fetch("/Html/Components/navbar.html")
     .then((response) => response.text())
     .then((navbar) => $("body").prepend(navbar));
-  fetch("/public/Html/Components/footer.html")
+  fetch("/Html/Components/footer.html")
     .then((response) => response.text())
     .then((footer) => $("body").append(footer));
 });
