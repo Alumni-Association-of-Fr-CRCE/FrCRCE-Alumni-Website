@@ -36,7 +36,7 @@ router.get("/api/alumni", async (req, res) => {
 });
 //  Home
 router.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname + "/Html/index.html"));
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
 
 //  About Sub-Sections
