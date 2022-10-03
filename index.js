@@ -7,7 +7,7 @@ const router = express.Router();
 const app = express();
 const port = 8080;
 
-__dirname = path.join(__dirname + "/docs");
+__dirname = path.join(__dirname + "../docs");
 
 app.use(cors());
 app.use(express.static(path.join(__dirname)));
