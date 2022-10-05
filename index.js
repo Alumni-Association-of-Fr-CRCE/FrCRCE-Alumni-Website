@@ -7,7 +7,7 @@ const router = express.Router();
 const app = express();
 const port = 8080;
 
-__dirname = path.join(__dirname + "../docs");
+__dirname = path.join(__dirname + "/public");
 
 app.use(cors());
 app.use(express.static(path.join(__dirname)));
@@ -36,7 +36,7 @@ router.get("/api/alumni", async (req, res) => {
 });
 //  Home
 router.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname + "/index.html"));
+  res.sendFile(path.join(__dirname + "/Html/index.html"));
 });
 
 //  About Sub-Sections
