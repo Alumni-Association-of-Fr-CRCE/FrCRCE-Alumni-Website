@@ -9,14 +9,14 @@
       name="description"
       content="CRCE Alma-mater | Alumni Association of Fr. Conceicao Rodrigues College of Engineering."
     />
-    <meta name="image" content="/Assets/Images/logo.webp" />
+    <meta name="image" content="./Assets/Images/logo.webp" />
 
     <meta itemprop="name" content="Alumni | Fr.CRCE" />
     <meta
       itemprop="description"
       content="CRCE Alma-mater | Alumni Association of Fr. Conceicao Rodrigues College of Engineering."
     />
-    <meta itemprop="image" content="/Assets/Images/logo.webp" />
+    <meta itemprop="image" content="./Assets/Images/logo.webp" />
 
     <!--Recommended dimension: 1200px x 630px; minimum dimension: 600px x 315px-->
     <meta name="og:title" content="Alumni | Fr.CRCE" />
@@ -30,7 +30,7 @@
     <meta name="fb:admins" content="12345" />
     <meta name="fb:app_id" content="12344" />
     <meta name="og:type" content="website" />
-    <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.webp" />
+    <link rel="icon" type="image/x-icon" href="./Assets/Images/logo.webp" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -104,12 +104,12 @@
         <div class="swiper banner">
           <div class="swiper-wrapper" id="banners">
             <!-- <img class="swiper-slide" src="/Assets/Banners/temp1.png" alt="" /> -->
-            <img class="swiper-slide" src="/Assets/Banners/11.webp" alt="" />
-            <img class="swiper-slide" src="/Assets/Banners/10.webp" alt="" />
-            <img class="swiper-slide" src="/Assets/Banners/9.webp" alt="" />
-            <img class="swiper-slide" src="/Assets/Banners/8.webp" alt="" />
-            <img class="swiper-slide" src="/Assets/Banners/7.webp" alt="" />
-            <img class="swiper-slide" src="/Assets/Banners/1.webp" alt="" />
+            <img class="swiper-slide" src="./Assets/Banners/11.webp" alt="" />
+            <img class="swiper-slide" src="./Assets/Banners/10.webp" alt="" />
+            <img class="swiper-slide" src="./Assets/Banners/9.webp" alt="" />
+            <img class="swiper-slide" src="./Assets/Banners/8.webp" alt="" />
+            <img class="swiper-slide" src="./Assets/Banners/7.webp" alt="" />
+            <img class="swiper-slide" src="./Assets/Banners/1.webp" alt="" />
             <!-- <img
               loading="lazy"
               class="swiper-slide"
@@ -185,7 +185,7 @@
       </div>
       <script>
         async function loadLatestSpotlight() {
-          const data = await fetch("/api/spotlights");
+          const data = await fetch("./Data/spotlights.json");
           const spotlights = await data.json();
           const frame = document.getElementById("frame");
           frame.src = spotlights[0].YTUrl;
@@ -222,7 +222,7 @@
           </p>
           <div>
             Check all newsletters
-            <a class="YT-Link" href="/Activity/Newsletters">Here</a>
+            <a class="YT-Link" href="newsletter.html">Here</a>
           </div>
         </div>
         <div class="newsletter-releases swiper">
@@ -230,7 +230,7 @@
             <div class="swiper-slide">
               <img
                 loading="lazy"
-                src="/Assets/News-Letters/roots1.webp"
+                src="./Assets/News-Letters/roots1.webp"
                 alt=""
               />
               <!-- <a href="">Comming Soon</a> -->
@@ -238,7 +238,7 @@
             <div class="swiper-slide">
               <img
                 loading="lazy"
-                src="/Assets/News-Letters/roots2.webp"
+                src="./Assets/News-Letters/roots2.webp"
                 alt=""
               />
               <!-- <a
@@ -259,7 +259,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/dr-narendra-joshi-b33a6613/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/1.webp" alt="Dr. Narendra Joshi" />
+            <img src="./Assets/Notable-Alumni/1.webp" alt="Dr. Narendra Joshi" />
             <h3><i class="fa-brands fa-linkedin"></i>Dr. Narendra Joshi</h3>
             <p>
               Production Engg. <br />
@@ -270,7 +270,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/alimariya', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/2.webp" alt="Mariya Ali" />
+            <img src="./Assets/Notable-Alumni/2.webp" alt="Mariya Ali" />
             <h3><i class="fa-brands fa-linkedin"></i>Mariya Ali</h3>
             <p>Electronics Engg. 2016</p>
           </div>
@@ -278,7 +278,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/subrai-pai-b0a46a57', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/3.webp" alt="Subrai Pai" />
+            <img src="./Assets/Notable-Alumni/3.webp" alt="Subrai Pai" />
             <h3><i class="fa-brands fa-linkedin"></i>Subrai Pai</h3>
             <p>Computer Engg. 2012</p>
           </div>
@@ -287,7 +287,7 @@
             onclick="window.open('https://www.linkedin.com/in/bhanushalikirti/', target='_blank')"
           >
             <img
-              src="/Assets/Notable-Alumni/4.webp"
+              src="./Assets/Notable-Alumni/4.webp"
               alt="Dr. Kirti Bhanushali"
             />
             <h3><i class="fa-brands fa-linkedin"></i>Dr. Kirti Bhanushali</h3>
@@ -298,7 +298,7 @@
             onclick="window.open('https://www.linkedin.com/in/shobana-chandramohan-595b0a57/', target='_blank')"
           >
             <img
-              src="/Assets/Notable-Alumni/5.webp"
+              src="./Assets/Notable-Alumni/5.webp"
               alt="Shobana Chandramohan"
             />
             <h3><i class="fa-brands fa-linkedin"></i>Shobana Chandramohan</h3>
@@ -308,7 +308,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/shannon-gonsalves-b52570104/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/6.webp" alt="Shannon Gonsalves" />
+            <img src="./Assets/Notable-Alumni/6.webp" alt="Shannon Gonsalves" />
             <h3><i class="fa-brands fa-linkedin"></i>Shannon Gonsalves</h3>
             <p>Electronics Engg. 2018</p>
           </div>
@@ -316,7 +316,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/suchitra-pillai-46777028/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/7.webp" alt="Suchitra Pillai" />
+            <img src="./Assets/Notable-Alumni/7.webp" alt="Suchitra Pillai" />
             <h3><i class="fa-brands fa-linkedin"></i>Suchitra Pillai</h3>
             <p>Electronics Engg. 1991</p>
           </div>
@@ -324,7 +324,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/saylighanekar/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/8.webp" alt="Sayli Ghanekar" />
+            <img src="./Assets/Notable-Alumni/8.webp" alt="Sayli Ghanekar" />
             <h3><i class="fa-brands fa-linkedin"></i>Sayli Ghanekar</h3>
             <p>Electronics Engg. 2012</p>
           </div>
@@ -332,7 +332,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/yogeshnaik/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/9.webp" alt="Dr. Yogesh Naik" />
+            <img src="./Assets/Notable-Alumni/9.webp" alt="Dr. Yogesh Naik" />
             <h3><i class="fa-brands fa-linkedin"></i>Dr. Yogesh Naik</h3>
             <p>Electronics Engg. 1995</p>
           </div>
@@ -340,7 +340,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/subhash-bishnoi-30a3b86b/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/10.webp" alt="Subhash Bishnoi" />
+            <img src="./Assets/Notable-Alumni/10.webp" alt="Subhash Bishnoi" />
             <h3><i class="fa-brands fa-linkedin"></i>Subhash Bishnoi</h3>
             <p>IT Engg. 2016</p>
           </div>
@@ -348,7 +348,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/kartavya/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/11.webp" alt="Kartavya Chitalia" />
+            <img src="./Assets/Notable-Alumni/11.webp" alt="Kartavya Chitalia" />
             <h3><i class="fa-brands fa-linkedin"></i>Kartavya Chitalia</h3>
             <p>Electronics Engg. 1993</p>
           </div>
@@ -356,7 +356,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/shriyakumar94/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/12.webp" alt="Shriya Kumar" />
+            <img src="./Assets/Notable-Alumni/12.webp" alt="Shriya Kumar" />
             <h3><i class="fa-brands fa-linkedin"></i>Shriya Kumar</h3>
             <p>Computer Engg. 2016</p>
           </div>
@@ -364,7 +364,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/dilip-asbe-0185453/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/13.webp" alt="Dilip Asbe" />
+            <img src="./Assets/Notable-Alumni/13.webp" alt="Dilip Asbe" />
             <h3><i class="fa-brands fa-linkedin"></i>Dilip Asbe</h3>
             <p>Engg. 1997</p>
           </div>
@@ -372,7 +372,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/aumkarrane/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/14.webp" alt="Aumkar Rane" />
+            <img src="./Assets/Notable-Alumni/14.webp" alt="Aumkar Rane" />
             <h3><i class="fa-brands fa-linkedin"></i>Aumkar Rane</h3>
             <p>Production Engg. 2017</p>
           </div>
@@ -380,7 +380,7 @@
             class="swiper-slide"
             onclick="window.open('https://www.linkedin.com/in/jinal-sarvaiya/', target='_blank')"
           >
-            <img src="/Assets/Notable-Alumni/15.webp" alt="Jinal Sarvaiya" />
+            <img src="./Assets/Notable-Alumni/15.webp" alt="Jinal Sarvaiya" />
             <h3><i class="fa-brands fa-linkedin"></i>Jinal Sarvaiya</h3>
             <p>Electronics Engg. 2018</p>
           </div>
