@@ -10,7 +10,7 @@ function createAlumniCard(data) {
 }
 
 async function loadAlumni() {
-  const res = await fetch("/api/alumni");
+  const res = await fetch("./Data/alumni.json");
   const alumni = await res.json();
   let container = document.getElementById("notablealumni");
   for (let i = 0; i < alumni.length; i++)
