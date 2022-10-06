@@ -13,7 +13,7 @@ for (let i = 0; i < coll.length; i++) {
 }
 
 async function insertImages() {
-  const data = await fetch("/api/gallery");
+  const data = await fetch("./Data/gallery.json");
   const images = await data.json();
   for (let id in images) {
     let container = document.getElementById(id);
