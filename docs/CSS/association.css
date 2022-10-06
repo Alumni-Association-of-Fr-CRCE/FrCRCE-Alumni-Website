@@ -7,7 +7,7 @@
 
 .content-intro {
   display: block;
-  background-image: url(/Assets/Images/alumni.webp);
+  background-image: url(./Assets/Images/alumni.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
