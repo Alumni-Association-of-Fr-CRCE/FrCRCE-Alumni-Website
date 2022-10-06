@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("#roots21").flipBook({
     //Layout Setting
-    pdfUrl: "../Assets/PDF/roots21.pdf",
+    pdfUrl: "/docs/Assets/PDF/roots21.pdf",
     lightBox: true,
     layout: 3,
     currentPage: { vAlign: "bottom", hAlign: "left" },
