@@ -15,7 +15,7 @@ function createTestimonial(data) {
 }
 
 async function loadTestimonials() {
-  const res = await fetch("/api/testimonials");
+  const res = await fetch("./Data/testimonials.json");
   const testimonials = await res.json();
   for (key in testimonials) {
     console.log(key);
