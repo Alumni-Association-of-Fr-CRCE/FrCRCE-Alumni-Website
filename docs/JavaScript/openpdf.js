@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("#roots21").flipBook({
     //Layout Setting
-    pdfUrl: "/docs/Assets/PDF/roots21.pdf",
+    pdfUrl: "./Assets/PDF/roots21.pdf",
     lightBox: true,
     layout: 3,
     currentPage: { vAlign: "bottom", hAlign: "left" },
@@ -53,7 +53,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#roots22").flipBook({
     //Layout Setting
-    pdfUrl: "../Assets/PDF/roots22.pdf",
+    pdfUrl: "FrCRCE-Alumni-Website/docs/Assets/PDF/roots22.pdf",
     lightBox: true,
     layout: 3,
     currentPage: { vAlign: "bottom", hAlign: "left" },
