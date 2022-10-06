@@ -54,6 +54,7 @@ $(document).ready(function () {
   $("#roots22").flipBook({
     //Layout Setting
     pdfUrl: "./Assets/PDF/roots22.pdf",
+
     lightBox: true,
     layout: 3,
     currentPage: { vAlign: "bottom", hAlign: "left" },
