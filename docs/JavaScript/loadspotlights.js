@@ -38,7 +38,7 @@ function spotlight(data) {
 }
 
 async function addSpotlights() {
-  const res = await fetch("/api/spotlights");
+  const res = await fetch("./Data/spotlights.json");
   const data = await res.json();
   console.log(data);
   for (let i = 0; i < data.length; i++) spotlight(data[i]);
