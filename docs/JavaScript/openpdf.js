@@ -53,7 +53,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#roots22").flipBook({
     //Layout Setting
-    pdfUrl: "FrCRCE-Alumni-Website/docs/Assets/PDF/roots22.pdf",
+    pdfUrl: "./Assets/PDF/roots22.pdf",
+
     lightBox: true,
     layout: 3,
     currentPage: { vAlign: "bottom", hAlign: "left" },
@@ -105,7 +106,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#aids22").flipBook({
     //Layout Setting
-    pdfUrl: "../Assets/PDF/AIDSdep22.pdf",
+    pdfUrl: "./Assets/PDF/AIDSdep22.pdf",
     lightBox: true,
     layout: 3,
     currentPage: { vAlign: "bottom", hAlign: "left" },
@@ -157,7 +158,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#comps22").flipBook({
     //Layout Setting
-    pdfUrl: "../Assets/PDF/Compsdep22.pdf",
+    pdfUrl: "./Assets/PDF/Compsdep22.pdf",
     lightBox: true,
     layout: 3,
     currentPage: { vAlign: "bottom", hAlign: "left" },
