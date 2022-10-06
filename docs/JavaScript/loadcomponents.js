@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  fetch("/FrCRCE-Alumni-Website/docs/Components/navbar.html")
+  fetch("navbar.html")
     .then((response) => response.text())
     .then((navbar) => $("body").prepend(navbar));
-  fetch("/FrCRCE-Alumni-Website/docs/Components/footer.html")
+  fetch("footer.html")
     .then((response) => response.text())
     .then((footer) => $("body").append(footer));
 });
