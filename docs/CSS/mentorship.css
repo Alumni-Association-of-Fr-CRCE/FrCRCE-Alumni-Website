@@ -390,8 +390,6 @@
   -ms-transform: scale(2.2);
   -webkit-transform: scale(2.2);
   color: #112d4e;
-  background: -webkit-linear-gradient(45deg, #112d4e, #fff);
-  -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
 
