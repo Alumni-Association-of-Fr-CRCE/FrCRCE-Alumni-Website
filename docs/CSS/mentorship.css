@@ -101,6 +101,24 @@
   font-size: 100%;
 }
 
+.close:hover{
+  text-decoration: none;
+  color: #fff;
+  text-shadow:#fff 4px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 10px #ece0e0, 0 0 10px #dacece, 0 0 10px #f0e6e6, 0 0 10px #e8e0eb, 0 0 10px #d5c7db, 0 0 10px #ded6e1;
+  }
+  to {
+    text-shadow: 0 0 10px #eeeeee, 0 0 10px #f4eaef, 0 0 10px #f4ecf0, 0 0 10px #ece4e8, 0 0 10px #eae3e6, 0 0 10px #ebe1e6, 0 0 10px #dfd6db;
+  }
+}
+
 .fa-arrow-rotate-left{
   margin-top: 3%;
   color: white;
