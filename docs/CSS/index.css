@@ -319,3 +319,17 @@ q {
   color: #0072b1;
   margin-right: 5px;
 }
+
+.ban-fade, .ban-fade-white{
+  transition: 0.5s all ease-in-out;
+}
+
+.ban-fade:hover{
+  opacity:0.9;
+  transform: scale(0.94);
+}
+
+.ban-fade-white:hover{
+  opacity:0.9;
+  transform: scale(0.94);
+}
