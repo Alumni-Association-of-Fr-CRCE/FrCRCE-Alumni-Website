@@ -1,23 +1,26 @@
 import Swiper from "https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js";
-const banner = new Swiper(".banner", {
+const banner = new Swiper('.swiper-container', {
   speed: 500,
-  spaceBetween: 30,
+  spaceBetween: 190,
+  slidesPerView: 1,
   direction: "horizontal",
   loop: true,
   centeredSlides: true,
+  slideToClickedSlide: true,
   pagination: {
-    el: ".banner-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
   navigation: {
-    nextEl: ".banner-button-next",
-    prevEl: ".banner-button-prev",
+   nextEl: '.swiper-button-next',
+   prevEl: '.swiper-button-prev',
   },
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
 });
+
 
 const notablealumni = new Swiper(".notable-alumni", {
   slidesPerView: $(window).width() < 600 ? 1 : 4,

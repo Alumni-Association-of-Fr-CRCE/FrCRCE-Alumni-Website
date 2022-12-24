@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
 /* @import url("http://fonts.cdnfonts.com/css/nexa-bold?styles=29919"); */
 
 :root {
@@ -76,7 +77,7 @@ body {
   height: 90px;
 }
 
-.topnav .logo-text {
+.topnav .l-text {
   display: block;
   text-align: justify;
   padding-top: 5%;
@@ -96,14 +97,14 @@ body {
   display: none;
 }
 
-.dropdown {
+.dropdwn {
   float: left;
   overflow: hidden;
   margin: 2em 1em;
   font-family: "Montserrat", sans-serif;
 }
 
-.dropdown .dropbtn {
+.dropdwn .dropbtn {
   font-size: 1.15em;
   border: none;
   outline: none;
@@ -114,7 +115,7 @@ body {
   margin: 0;
 }
 
-.dropdown-content {
+.dropdwn-contents {
   display: none;
   position: absolute;
   background-color: rgb(48, 48, 48);
@@ -124,7 +125,7 @@ body {
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdwn-contents a {
   float: none;
   color: inherit;
   padding: 12px 16px;
@@ -135,16 +136,16 @@ body {
 }
 
 .topnav a:hover,
-.dropdown:hover .dropbtn {
+.dropdwn:hover .dropbtn {
   background-color: rgb(60, 60, 60);
   border-radius: 2.5px;
 }
 
-.dropdown-content a:hover {
+.dropdwns-contents a:hover {
   background-color: rgb(65, 65, 65);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdwn:hover .dropdwn-contents {
   display: block;
 }
 
@@ -161,7 +162,7 @@ body {
     float: left;
   }
   .topnav a:not(:first-child),
-  .dropdown .dropbtn {
+  .dropdwn .dropbtn {
     display: none;
   }
   .topnav a.icon {
@@ -184,14 +185,14 @@ body {
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {
+  .topnav.responsive .dropdwn {
     float: none;
     margin: 0px;
   }
-  .topnav.responsive .dropdown-content {
+  .topnav.responsive .dropdwn-contents {
     position: relative;
   }
-  .topnav.responsive .dropdown .dropbtn {
+  .topnav.responsive .dropdwn .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
