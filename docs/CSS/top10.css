@@ -1,0 +1,134 @@
+#main-content {
+    margin-top: 25px;
+}
+
+.divider {
+    border-top: dotted 5px;
+    width: 40%;
+    margin: 40px auto;
+}
+
+h1 {
+    background-color: #FCDDB0;
+    padding: 15px 40px;
+    border: solid 2px;
+    border-radius: 30px;
+    text-align: center;
+    display: block;
+}  
+
+.nav-link {
+    background-color: #f5d491 !important;
+    color: #4f4049 !important;
+    border: solid 1px !important;
+    border-radius: 0 5px 5px 0!important;
+}
+
+.nav-link:hover {
+    background-color: #4f4049 !important;
+    color: #f5d491 !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #fff;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background: #fff;
+    margin: 40px 0;
+    text-align: center;
+    padding: 20px 40px;
+    color: #000;
+    position: relative;
+    border-radius: 25px;
+    border: solid 1px #000;
+    /* box-shadow: 10px 20px 30px #404258, -10px -10px 20px #404258,
+        inset -5px -5px 15px #404258; */
+}
+
+.box h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    height: 56px;
+}
+
+.box p {
+    font-size: 18px;
+    height: 80px;
+    margin: 0;
+}
+
+.menu {
+    width: 25px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.profile_pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #fff;
+    padding: 5px;
+    margin: 25px;
+}
+
+.alumni-details img {
+    color: #000;
+    width: 22px;
+    margin: -4px 1px;
+}
+
+.alumni-details {
+    color: #000;
+    font-size: 10px;
+    margin: 15px;
+}
+
+
+/* .bottom {
+    background: #fff;
+    padding: 5px 20px;
+    border: solid 1px #000;
+    color: #000;
+    margin-left: -42px;
+    margin-bottom: -40px;
+    border-radius: 25px;
+    margin-top: 10px;
+    width: 300px;
+} */
+
+.bottom img {
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.alumni-position, .alumni-company {
+    margin: 0;
+    font-family: 'Times New Roman';
+}
+
+.alumni-location {
+    font-size: 10px;
+}
