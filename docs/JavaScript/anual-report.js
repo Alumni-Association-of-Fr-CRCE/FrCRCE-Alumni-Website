@@ -6,4 +6,4 @@ function openTab(tabName) {
   }
   document.getElementById(tabName).style.display = "block";
 }
-openTab("2021-2022");
+openTab("2022-2023");
