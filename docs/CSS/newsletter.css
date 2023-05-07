@@ -15,11 +15,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   gap: 2em;
 }
 
 .newsletter {
-  margin: 0 auto;
+  margin: 1rem auto;
+  display: -ms-inline-flexbox;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
