@@ -9,5 +9,6 @@ for (let i = 0; i < coll.length; i++) {
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
     }
+    console.log(content.style.maxHeight)
   });
 }
