@@ -4,7 +4,7 @@
       "name": "Ritik Mehrotra",
       "batch": "B.E. Electronics Engg.",
       "img": "./Assets/Contributions/Testimonials/Ritik-Mehrotra.webp",
-      "text": "I am thankful to the Stulz Scholarship and I wish that in thefuture I will be able to stand in such a situation to pay thischance forward to another individual and make a variety instudents’ existences."
+      "text": "I am thankful to the Stulz Scholarship and I wish that in thefuture I will be able to stand in such a situation to pay thischance forward to another individual and make a variety in students existences."
     },
     {
       "name": "Suryansh Purohit",
@@ -80,10 +80,30 @@
     },
     {
       "name": "Bishnu Shrestha",
-      "batch": "S.E. Mechanical Engg.",
+      "batch": "S.E. Computer Engg.",
       "img": "./Assets/Contributions/Testimonials/Bishnu-Shrestha.webp",
-      "text": "I am writing to express my sincere and genuine gratitude and appreciation to you for sponsoring my studies and making the Stulz scholarship possible. Your scholarship is priceless and will definitely help me in my educational endeavors. Words can’t possibly measure the happiness I felt when I was informed that I’m chosen and sponsored by you to receive this scholarship. I am grateful for this opportunity to prove myself. It beyond doubt means a lot to me. Thank you once again for your bounteousness, assistance and for having faith in me. I guarantee you that I will make use of this opportunity to study really hard, achieve my goals and be a successful person in life. You have inspired me a lot and your kind favor also motivates me to help others in need and will definitely do so in the future."
+      "text": "I am writing to express my sincere and genuine gratitude and appreciation to you for sponsoring my studies and making the Stulz scholarship possible. Your scholarship is priceless and will definitely help me in my educational endeavors. Words can't possibly measure the happiness I felt when I was informed that I'm chosen and sponsored by you to receive this scholarship. I am grateful for this opportunity to prove myself. It beyond doubt means a lot to me. Thank you once again for your bounteousness, assistance and for having faith in me. I guarantee you that I will make use of this opportunity to study really hard, achieve my goals and be a successful person in life. You have inspired me a lot and your kind favor also motivates me to help others in need and will definitely do so in the future."
+    },
+
+    {
+      "name": "Vishal Jaiswal",
+      "batch": "B.E. ECS Engg.",
+      "img": "./Assets/Contributions/Testimonials/vishal-jaiswal.webp",
+      "text": "I am incredibly grateful for your two years of your consecutive scholorhip support during my engineering studies.Your genorosity has been crucial in my academic journey, allowing me to focus on learning and growth without the worry of financial constraints.Your belief in me has inspired confindence and determination as I pursue my goals.Thank you for being an essential part of my success."
+    },
+    {
+      "name": "Satwik Shetty",
+      "batch": "B.E. ECS Engg.",
+      "img": "./Assets/Contributions/Testimonials/satwik-shetty.webp",
+      "text": "Dear esteemed alumni, as I think back on my educational journey, I am filled with gratitude for your unwavering support and generous sponsorship. Your dedication to shaping the future of students like me has made a big impact, giving us the confidence to pursue our dreams. As I near the end of my course, I wanted to express how much your help and encouragement have meant to me. Your belief in the power of education will always stay with me. Thank you for playing such an important role in my success and the success of many others."
+    },
+    {
+      "name": "Bishnu Shrestha",
+      "batch": "B.E. Computer Engg.",
+      "img": "./Assets/Contributions/Testimonials/Bishnu-Shrestha.webp",
+      "text": "My sincere and genuine gratitude and appreciation to you for sponsoring my studies and giving me financial assistance through the Alumni Scholarship for the last two consecutive year. Your scholarship is beneficial and helped me a lot in my educational endeavors.  I am grateful for this opportunity to prove myself. Thank you for your bounteousness, your assistance , your confidence in me and for the opportunity to study hard, to pursue and reach my goals and become a successful person in life. You have inspired me a lot with your kind favor.."
     }
+
   ],
   "MilindMehere": [
     {
